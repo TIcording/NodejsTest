@@ -1,0 +1,40 @@
+create student
+POST
+localhost:3000/students
+
+{
+    "studentNumber" :"1010",
+    "name" : "서",
+    "contact" : "01010",
+    "email" : "seo@seo.com",
+    "address" : "서울특별시"
+}
+
+get student all
+GET
+localhost:3000/students/grades
+
+create score by id
+POST
+localhost:3000/students/1010/scores
+
+update student by id
+PUT
+localhost:3000/students/2
+
+delete student by id
+DEL
+localhost:3000/students/2
+
+search student by studentNumber
+GET
+localhost:3000/students/search/1010
+
+update student score by studentNumber
+PUT
+localhost:3000/students/scores/1010
+
+delete student score by studentNumber
+DEL
+localhost:3000/students/scores/1010
+
